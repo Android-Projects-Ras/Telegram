@@ -31,7 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccent"
-            android:text="Andrew Rozhkov"
+            tools:text="Andrew Rozhkov"
             app:layout_constraintStart_toEndOf="@id/settings_user_photo"
             app:layout_constraintTop_toTopOf="@id/settings_user_photo"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,10 +40,11 @@
             android:textSize="@dimen/normal_text"/>
 
         <TextView
+            android:id="@+id/settings_status"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccentDark"
-            android:text="в сети"
+            tools:text="@string/settings_default_status"
             app:layout_constraintStart_toEndOf="@id/settings_user_photo"
             app:layout_constraintTop_toBottomOf="@id/settings_full_name"
             app:layout_constraintEnd_toEndOf="parent"
@@ -76,7 +77,7 @@
 
         <TextView
             android:id="@+id/settings_phone_number"
-            android:text="@string/settings_default_number"
+            tools:text="@string/settings_default_number"
             app:layout_constraintTop_toTopOf="@id/settings_btn_change_number_phone"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/normal_text" />
@@ -94,11 +95,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             style="@style/separator" />
 
-
-
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -113,7 +109,7 @@
 
         <TextView
             android:id="@+id/settings_username"
-            android:text="@string/settings_default_login"
+            tools:text="@string/settings_default_login"
             app:layout_constraintTop_toTopOf="@id/settings_btn_change_username"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/normal_text" />
@@ -131,11 +127,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             style="@style/separator" />
 
-
-
-
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -150,7 +141,7 @@
 
         <TextView
             android:id="@+id/settings_bio"
-            android:text="@string/settings_default_bio"
+            tools:text="@string/settings_default_bio"
             app:layout_constraintTop_toTopOf="@id/settings_btn_change_bio"
             app:layout_constraintStart_toStartOf="parent"
             style="@style/normal_text" />
@@ -167,11 +158,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             style="@style/separator" />
-
-
-
-
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
