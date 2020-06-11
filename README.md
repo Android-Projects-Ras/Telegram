@@ -1,3 +1,3 @@
 # Telegram
-Training project
+Training project\n
 Creating clone of a Telegram app using Firebase
