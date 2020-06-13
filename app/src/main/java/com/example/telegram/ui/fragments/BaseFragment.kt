@@ -14,3 +14,4 @@ open class BaseFragment(layout: Int) : Fragment(layout) {
         APP_ACTIVITY.mAppDrawer.enableDrawer()
     }
 }
+
