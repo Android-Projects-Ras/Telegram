@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/small_text"
-        android:layout_margin="@dimen/vertical_margin"
+        android:layout_margin="@dimen/app_small_margin"
         android:text="@string/register_text_we_send"
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/register_text_enter_code"/>

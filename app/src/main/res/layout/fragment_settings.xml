@@ -35,8 +35,8 @@
             app:layout_constraintStart_toEndOf="@id/settings_user_photo"
             app:layout_constraintTop_toTopOf="@id/settings_user_photo"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="@dimen/vertical_margin"
-            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginTop="@dimen/app_small_margin"
+            android:layout_marginStart="@dimen/app_margin"
             android:textSize="@dimen/normal_text"/>
 
         <TextView
@@ -48,7 +48,7 @@
             app:layout_constraintStart_toEndOf="@id/settings_user_photo"
             app:layout_constraintTop_toBottomOf="@id/settings_full_name"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginStart="@dimen/app_margin"
             android:textSize="@dimen/small_text"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -60,7 +60,7 @@
         android:textColor="@color/colorPrimary"
         app:layout_constraintTop_toBottomOf="@id/settings_header_blog"
         android:text="@string/settings_text_account"
-        android:layout_marginStart="@dimen/horizontal_margin"
+        android:layout_marginStart="@dimen/app_margin"
         android:layout_marginTop="@dimen/vertical_large_margin"
         android:textSize="@dimen/small_text"
         android:textStyle="bold"/>
@@ -166,7 +166,7 @@
         android:layout_width="@dimen/settings_user_photo_width"
         android:layout_height="@dimen/settings_user_photo_height"
         android:src="@drawable/ic_camera"
-        android:layout_marginEnd="@dimen/horizontal_margin"
+        android:layout_marginEnd="@dimen/app_margin"
         app:civ_border_color="@color/colorGrey"
         app:civ_circle_background_color="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="@+id/settings_header_blog"

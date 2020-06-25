@@ -16,12 +16,12 @@ class ChangeUserNameFragment : BaseChangeFragment(R.layout.fragment_change_user_
 
     override fun change() {
         mNewUsername = settings_input_username.text.toString().toLowerCase(Locale.getDefault())
-        if(mNewUsername.isEmpty()){
+        if(mNewUsername.isEmpty()) {
             showToast("Поле пустое")
         } else {
             REF_DATABASE_ROOT.child(NODE_USERNAMES)
                 .addListenerForSingleValueEvent(AppValueEventListener{
-                    if (it.hasChild(mNewUsername)){
+                    if (it.hasChild(mNewUsername)) {
                         showToast("Такой пользователь уже существует")
                     } else {
                         changeUsername()
@@ -43,7 +43,7 @@ class ChangeUserNameFragment : BaseChangeFragment(R.layout.fragment_change_user_
         REF_DATABASE_ROOT.child(NODE_USERS).child(CURRENT_UID).child(CHILD_USERNAME)
             .setValue(mNewUsername)
             .addOnCompleteListener {
-                if (it.isSuccessful){
+                if (it.isSuccessful) {
                     showToast(getString(R.string.toast_data_update))
                     deleteOldUsername()
                 } else {
@@ -55,7 +55,7 @@ class ChangeUserNameFragment : BaseChangeFragment(R.layout.fragment_change_user_
     private fun deleteOldUsername() {
         REF_DATABASE_ROOT.child(NODE_USERNAMES).child(USER.username).removeValue()
             .addOnCompleteListener {
-                if (it.isSuccessful){
+                if (it.isSuccessful) {
                     showToast(getString(R.string.toast_data_update))
                     fragmentManager?.popBackStack()
                     USER.username = mNewUsername
